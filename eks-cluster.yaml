@@ -33,9 +33,9 @@ iam:
         autoScaler: true
 
 availabilityZones:
-  - us-west-2a
-  - us-west-2b
-  - us-west-2c
+  - us-east-1a
+  - us-east-1b
+  - us-east-1c
 
 # By default we create a dedicated VPC for the cluster
 # You can use an existing VPC by supplying private and/or public subnets. Please check
@@ -77,7 +77,7 @@ managedNodeGroups:
     # Use private subnets for nodes
     # https://eksctl.io/usage/vpc-networking/#use-private-subnets-for-initial-nodegroup
     privateNetworking: true
-    ami: ami-009935ddbb32a7f3c
+    ami: ami-076db8ca29c04327b
 
     tags:
       # EC2 tags required for cluster-autoscaler auto-discovery
